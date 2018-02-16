@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>App Name</title>
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700" rel="stylesheet" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/stylesheet/stylesheet.css" rel="stylesheet">
+		<link href="/stylesheet/megnor/custom.css" rel="stylesheet">
+  </head>
+  <body>
+			<nav id="top">
+					<div class="container">
+						<div class="content_headercms_top pull-left"><i class="fa fa-tag" aria-hidden="true"></i> Biggest Indian Sale Flate ( Coupn Code : FREE 15 )</div>
+						<div id="top-links" class="nav pull-right">
+							<ul class="list-inline">
+									<li class="pull-left">
+											<form id="form-currency">
+											<div class="btn-group">
+													<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+													 <strong>$</strong>
+													<span class="hidden-xs hidden-sm hidden-md">Currency</span>&nbsp;<i class="fa fa-caret-down"></i></button>
+													<ul class="dropdown-menu currency-menu">
+														<li>
+															<button class="currency-select btn btn-link btn-block" type="button" name="dollar">$ US Dollar</button>
+														</li>
+														<li>
+															<button class="currency-select btn btn-link btn-block" type="button" name="naira"># Naira</button>
+														</li>
+												</ul>
+											</div>
+											<input type="hidden" name="code" value="" />
+												<input type="hidden" name="redirect" value="#" />
+										</form>
+										</li>
+
+								<li><a href="/"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md">0807348785784</span></li>
+								<li><a href="/" id="wishlist-total" title="wishlist"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md">Wishlist (0)</span></a></li>
+								<li><a href="/" title="checkout"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md">Checkout</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<header>
+					<div class="container">
+						<div class="row">
+							<div class="header-logo">
+								<div id="logo">
+									<Link to="/"><img width="100px" src="/image/logo.png" title="William Sonoma" alt="logo" class="img-responsive" /></Link>
+								</div>
+							</div>
+							<div class="header-links">
+									<ul class="static_links">
+											<li class="head-links"><a href="#">Special</a></li>
+											<li class="head-links"><a href="#">Affiliate</a></li>
+											<li class="head-links"> <a href="#">Blog</a></li>
+											<li class="head-links"><a href="#">Contact</a></li>
+									</ul>
+							</div>
+
+							<div class="col-sm-3 cart">
+								<div id="cart" class="btn-group btn-block">
+									<button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}" class="btn btn-inverse btn-block btn-lg dropdown-toggle">
+										<span class="cartimage"></span><span class="cart-price"><span class="text-shopping">Shopping Cart</span><span id="cart-total">0 Items - $0.00</span>
+									</span></button>
+									<ul class="dropdown-menu pull-right cart-menu">
+										<li>
+											<table class="table table-striped">
+												<tr>
+													<td class="text-center"><a href="#"><img src="image/product-small-d.jpg" alt="product name" title="product name" class="img-thumbnail" /></a></td>
+													<td class="text-left"><a href="#">Product Name</a> Product Option
+														<br />
+														- <small>Option Name Option Value</small>
+														<br />
+														- <small>RecurringText RecurringProduct</small> </td>
+													<td class="text-right">x3</td>
+													<td class="text-right">$400.97</td>
+													<td class="text-center"><button type="button" title="remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+												</tr>
+												<!-- <tr>
+													<td class="text-center"></td>
+													<td class="text-left">Voucher Description</td>
+													<td class="text-right">x&nbsp;1</td>
+													<td class="text-right">Coucher Amount</td>
+													<td class="text-center text-danger"><button type="button" title="button_remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+												</tr> -->
+											</table>
+										</li>
+										<li>
+											<div>
+												<table class="table table-bordered">
+													<tr>
+														<td class="text-right"><strong>Total</strong></td>
+														<td class="text-right">$700</td>
+													</tr>
+												</table>
+												<p class="text-right button-container"><a href="#"><strong><i class="fa fa-shopping-cart"></i> View Cart</strong></a>&nbsp;&nbsp;&nbsp;<a href="#"><strong><i class="fa fa-share"></i> Checkout</strong></a></p>
+											</div>
+										</li>
+										<!-- <li>
+											<p class="text-center">Empty Cart</p>
+										</li> -->
+									</ul>
+								</div>
+
+								<div class="dropdown myaccount"><a href="{{ account }}" title="{{ text_account }}" class="dropdown-toggle" data-toggle="dropdown"><span class="accountimage">
+									</span><div class="account-content"><span class="hidden-xs hidden-sm hidden-md">My Account</span> <span class="option">Get All Option </span></div>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right myaccount-menu">
+											{% if logged %}
+											<li><a href="{{ account }}">{{ text_account }}</a></li>
+											<li><a href="{{ order }}">{{ text_order }}</a></li>
+											<li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
+											<li><a href="{{ download }}">{{ text_download }}</a></li>
+											<li><a href="{{ logout }}">{{ text_logout }}</a></li>
+											{% else %}
+											<li><a href="{{ register }}">{{ text_register }}</a></li>
+											<li><a href="{{ login }}">{{ text_login }}</a></li>
+											{% endif %}
+										</ul>
+									</div>
+							</div>
+						</div>
+						<div class="content_headercms_bottom">
+
+							<div class="container-menu">
+								<div class="box-category">
+										<span class="heading-img"></span>shop by category
+								</div>
+								<div class="header-search">
+									<div id="search" class="input-group">
+										<input type="text" name="search" value="" placeholder="Search Products..." class="form-control input-lg" />
+										<span class="input-group-btn">
+											<button type="button" class="btn btn-default btn-lg search-button">Search</button>
+										</span>
+									</div>
+								</div>
+								<div class="offerbanner-outer">
+										<div class="textwidget custom-html-widget">
+												!!! Exclusive OFF on Home Appliance
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div id="product-category" class="container">
+						<ul class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<span>/</span>
+							<li>Product</li>
+						</ul>
+						<div class="clearfix"></div>
+						<div class="row">
+							<div class="col-md-3 left-col">
+								<div class="box latest_product">
+									<div class="box-heading">Latest</div>
+										<div class="box-content">
+											<div class="product-items">
+												<div class="product-block product-thumb">
+													<div class="product-block-inner">
+														<div class="image">
+															<a href="/"><img src="/image/product-small-a.jpg" alt="Product name" title="product name" class="img-responsive" /></a>
+															<div class="percentsaving">30% off</div>
+														</div>
+														<div class="product-details">
+															<div class="caption">
+																<a href="/"> product name </a>
+																<div class="rating">
+																	<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+																	<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+																</div>
+																<p class="price">
+																	<!-- $800 -->
+																	<span class="price-new">780</span> <span class="price-old">800</span>
+																	<span class="price-tax">Tax: $10</span>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="product-block product-thumb">
+													<div class="product-block-inner">
+														<div class="image">
+															<a href="/"><img src="/image/product-small-a.jpg" alt="Product name" title="product name" class="img-responsive" /></a>
+															<div class="percentsaving">30% off</div>
+														</div>
+														<div class="product-details">
+															<div class="caption">
+																<a href="/"> product name </a>
+																<div class="rating">
+																	<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+																	<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+																</div>
+																<p class="price">
+																	<!-- $800 -->
+																	<span class="price-new">780</span> <span class="price-old">800</span>
+																	<span class="price-tax">Tax: $10</span>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="product-block product-thumb">
+													<div class="product-block-inner">
+														<div class="image">
+															<a href="/"><img src="/image/product-small-a.jpg" alt="Product name" title="product name" class="img-responsive" /></a>
+															<div class="percentsaving">30% off</div>
+														</div>
+														<div class="product-details">
+															<div class="caption">
+																<a href="/"> product name </a>
+																<div class="rating">
+																	<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+																	<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+																</div>
+																<p class="price">
+																	<!-- $800 -->
+																	<span class="price-new">780</span> <span class="price-old">800</span>
+																	<span class="price-tax">Tax: $10</span>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<span class="latest_default_width" style="display:none; visibility:hidden"></span>
+								</div>
+							<div id="content" class="col-md-9">
+
+								<h2 class="page-title">Products</h2>
+								<div class="row category_thumb">
+									<div class="col-sm-2 category_img"><img src="/image/product-small-b.jpg" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-responsive" /></div>
+									<div class="col-sm-10 category_description">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+									</div>
+								</div>
+								<h3 class="refine-search">Refine Search</h3>
+								<div class="row">
+									<div class="col-sm-12 category_list">
+										<ul>
+												<li><a href="{{ category.href }}">PC (0)</a></li>
+												<li><a href="{{ category.href }}">Mac (1)</a></li>
+											</ul>
+									</div>
+								</div>
+
+								<div class="category_filter">
+									<div class="col-md-4 btn-list-grid">
+										<div class="btn-group">
+											<button type="button" id="grid-view" class="btn btn-default grid" data-toggle="tooltip" title="{{ button_grid }}"></button>
+											<button type="button" id="list-view" class="btn btn-default list" data-toggle="tooltip" title="{{ button_list }}"></button>
+
+										</div>
+									</div>
+							<div class="compare-total"><a href="{{ compare }}" id="compare-total"> Product Compare (0)</a></div>
+							<div class="pagination-right">
+							 <div class="sort-by-wrapper">
+								<div class="col-md-2 text-right sort-by">
+									<label class="control-label" for="input-sort"><strong>Sort By</strong></label>
+								</div>
+								<div class="col-md-3 text-right sort">
+									<select id="input-sort" class="form-control" onchange="location = this.value;">
+										<option value="menu_order" selected="selected">Default sorting</option>
+										<option value="popularity">Sort by popularity</option>
+										<option value="rating">Sort by average rating</option>
+										<option value="date">Sort by newness</option>
+										<option value="price">Sort by price: low to high</option>
+										<option value="price-desc">Sort by price: high to low</option>
+									</select>
+								</div>
+							 </div>
+							 <div class="show-wrapper">
+								<div class="col-md-1 text-right show">
+									<label class="control-label" for="input-limit"><strong>Show</strong></label>
+								</div>
+								<div class="col-md-2 text-right limit">
+									<select id="input-limit" class="form-control" onchange="location = this.value;">
+									<option value="10" selected="selected">10</option>
+									<option value="20">20</option>
+									<option value="30">30</option>
+									</select>
+								</div>
+							</div>
+								</div>
+							</div>
+
+								<div class="row">
+									<div class="product-layout product-grid col-md-3 col-xs-12">
+										<div class="product-block product-thumb">
+									 		<div class="product-block-inner">
+												<h4><a href="/">Product Name</a></h4>
+												<div class="image">
+													<a href="/">
+														<img src="/image/product-small-a.jpg" title="Product Name" alt="product name" class="img-responsive reg-image"/>
+														<img class="img-responsive hover-image" src="/image/product-large-a.jpg" title="product name" alt="product name"/>
+													</a>
+													<a href="/">
+														<img src="/image/product-small-b.jpg" title="/image/product-large-b.jpg" alt="product name" class="img-responsive"/>
+													</a>
+													<div class="saleback">
+														<div class="percentsaving">20% off</div>
+													</div>
+													<div class="rating">
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="caption">
+														<h4><a href="/">Product Name</a></h4>
+															<p class="price">
+																$300
+																<span class="price-new">$300</span> <span class="price-old">$450</span>
+																<span class="price-tax">Tax 50</span>
+															</p>
+															<!-- <p class="desc">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p> -->
+													</div>
+												</div>
+												<div class="product-block-hover">
+													<div class="button-group">
+														<button type="button" class="addtocart">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout product-grid col-md-3 col-xs-12">
+										<div class="product-block product-thumb">
+									 		<div class="product-block-inner">
+												<h4><a href="/">Product Name</a></h4>
+												<div class="image">
+													<a href="/">
+														<img src="/image/product-small-a.jpg" title="Product Name" alt="product name" class="img-responsive reg-image"/>
+														<img class="img-responsive hover-image" src="/image/product-large-a.jpg" title="product name" alt="product name"/>
+													</a>
+													<a href="/">
+														<img src="/image/product-small-b.jpg" title="/image/product-large-b.jpg" alt="product name" class="img-responsive"/>
+													</a>
+													<div class="saleback">
+														<div class="percentsaving">20% off</div>
+													</div>
+													<div class="rating">
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="caption">
+														<h4><a href="/">Product Name</a></h4>
+															<p class="price">
+																$300
+																<span class="price-new">$300</span> <span class="price-old">$450</span>
+																<span class="price-tax">Tax 50</span>
+															</p>
+															<!-- <p class="desc">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p> -->
+													</div>
+												</div>
+												<div class="product-block-hover">
+													<div class="button-group">
+														<button type="button" class="addtocart">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout product-grid col-md-3 col-xs-12">
+										<div class="product-block product-thumb">
+									 		<div class="product-block-inner">
+												<h4><a href="/">Product Name</a></h4>
+												<div class="image">
+													<a href="/">
+														<img src="/image/product-small-a.jpg" title="Product Name" alt="product name" class="img-responsive reg-image"/>
+														<img class="img-responsive hover-image" src="/image/product-large-a.jpg" title="product name" alt="product name"/>
+													</a>
+													<a href="/">
+														<img src="/image/product-small-b.jpg" title="/image/product-large-b.jpg" alt="product name" class="img-responsive"/>
+													</a>
+													<div class="saleback">
+														<div class="percentsaving">20% off</div>
+													</div>
+													<div class="rating">
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="caption">
+														<h4><a href="/">Product Name</a></h4>
+															<p class="price">
+																$300
+																<span class="price-new">$300</span> <span class="price-old">$450</span>
+																<span class="price-tax">Tax 50</span>
+															</p>
+															<!-- <p class="desc">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p> -->
+													</div>
+												</div>
+												<div class="product-block-hover">
+													<div class="button-group">
+														<button type="button" class="addtocart">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout product-grid col-md-3 col-xs-12">
+										<div class="product-block product-thumb">
+									 		<div class="product-block-inner">
+												<h4><a href="/">Product Name</a></h4>
+												<div class="image">
+													<a href="/">
+														<img src="/image/product-small-a.jpg" title="Product Name" alt="product name" class="img-responsive reg-image"/>
+														<img class="img-responsive hover-image" src="/image/product-large-a.jpg" title="product name" alt="product name"/>
+													</a>
+													<a href="/">
+														<img src="/image/product-small-b.jpg" title="/image/product-large-b.jpg" alt="product name" class="img-responsive"/>
+													</a>
+													<div class="saleback">
+														<div class="percentsaving">20% off</div>
+													</div>
+													<div class="rating">
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="caption">
+														<h4><a href="/">Product Name</a></h4>
+															<p class="price">
+																$300
+																<span class="price-new">$300</span> <span class="price-old">$450</span>
+																<span class="price-tax">Tax 50</span>
+															</p>
+															<!-- <p class="desc">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p> -->
+													</div>
+												</div>
+												<div class="product-block-hover">
+													<div class="button-group">
+														<button type="button" class="addtocart">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout product-grid col-md-3 col-xs-12">
+										<div class="product-block product-thumb">
+									 		<div class="product-block-inner">
+												<h4><a href="/">Product Name</a></h4>
+												<div class="image">
+													<a href="/">
+														<img src="/image/product-small-a.jpg" title="Product Name" alt="product name" class="img-responsive reg-image"/>
+														<img class="img-responsive hover-image" src="/image/product-large-a.jpg" title="product name" alt="product name"/>
+													</a>
+													<a href="/">
+														<img src="/image/product-small-b.jpg" title="/image/product-large-b.jpg" alt="product name" class="img-responsive"/>
+													</a>
+													<div class="saleback">
+														<div class="percentsaving">20% off</div>
+													</div>
+													<div class="rating">
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="caption">
+														<h4><a href="/">Product Name</a></h4>
+															<p class="price">
+																$300
+																<span class="price-new">$300</span> <span class="price-old">$450</span>
+																<span class="price-tax">Tax 50</span>
+															</p>
+															<!-- <p class="desc">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p> -->
+													</div>
+												</div>
+												<div class="product-block-hover">
+													<div class="button-group">
+														<button type="button" class="addtocart">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout product-grid col-md-3 col-xs-12">
+										<div class="product-block product-thumb">
+									 		<div class="product-block-inner">
+												<h4><a href="/">Product Name</a></h4>
+												<div class="image">
+													<a href="/">
+														<img src="/image/product-small-a.jpg" title="Product Name" alt="product name" class="img-responsive reg-image"/>
+														<img class="img-responsive hover-image" src="/image/product-large-a.jpg" title="product name" alt="product name"/>
+													</a>
+													<a href="/">
+														<img src="/image/product-small-b.jpg" title="/image/product-large-b.jpg" alt="product name" class="img-responsive"/>
+													</a>
+													<div class="saleback">
+														<div class="percentsaving">20% off</div>
+													</div>
+													<div class="rating">
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+												</div>
+												<div class="product-details">
+													<div class="caption">
+														<h4><a href="/">Product Name</a></h4>
+															<p class="price">
+																$300
+																<span class="price-new">$300</span> <span class="price-old">$450</span>
+																<span class="price-tax">Tax 50</span>
+															</p>
+															<!-- <p class="desc">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p> -->
+													</div>
+												</div>
+												<div class="product-block-hover">
+													<div class="button-group">
+														<button type="button" class="addtocart">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								 <div class="pagination-wrapper">
+								<div class="col-sm-6 text-left page-link">Showing 1 to 12 of 12 (1 Pages)</div>
+								<div class="col-sm-6 text-right page-result">12 Results</div>
+							 </div>
+							</div>
+							</div>
+				</div>
+
+
+				<footer>
+						<div class="content_footer_top">
+							<div class="footer-top-cms-wrapper">
+
+							</div>
+
+
+
+
+
+
+						</div>
+						<div id="footer" class="container">
+
+							 <div class="row">
+								<div class="col-sm-3 column">
+									<h5>Information</h5>
+									<ul class="list-unstyled">
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+								</div>
+
+								<div class="col-sm-3 column">
+									<h5>Customer Service</h5>
+									<ul class="list-unstyled">
+										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Returns</a></li>
+										<li><a href="#">Site Map</a></li>
+
+									</ul>
+								</div>
+								<div class="col-sm-3 column">
+									<h5>Extras</h5>
+									<ul class="list-unstyled">
+										<li><a href="#">Brands</a></li>
+										<li><a href="#">Gift Certificates</a></li>
+										<li><a href="#">Affiliates</a></li>
+										<li><a href="#">Specials</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-3 column">
+									<h5>My Account</h5>
+									<ul class="list-unstyled">
+										<li><a href="#">My Account</a></li>
+										<li><a href="#">Order History</a></li>
+										<li><a href="#">Wish list</a></li>
+										<li><a href="#">Newsletter</a></li>
+									</ul>
+								</div>
+								<div class="content_footer_right">
+										<h5>Contact Us</h5>
+										<ul class="list-unstyled">
+												<li>
+														<div class="address">
+																<div class="address_content">
+																		<div class="contact_address">
+																				60 29th Street San Francisco, CA 94110
+																	United States of America
+																		</div>
+															</div>
+														</div>
+												</li>
+										</ul>
+									</div>
+
+							</div>
+
+
+						</div>
+
+					<div class="content_footer_bottom">
+						<div class="container">
+							<div class="pull-left">
+								<ul class="toggle-block">
+									<li>
+										<a href="#" title="Facebook" class="facebook icon"><i class="fa fa-facebook"></i></a>
+										<a href="#" title="Twitter" class="twitter icon"><i class="fa fa-twitter"></i></a>
+
+										<a href="#" title="Linkedin" class="linkedin icon"><i class="fa fa-linkedin"></i></a>
+										<a href="#" title="RSS" class="rss icon"><i class="fa fa-rss"></i></a>
+										<a href="#" title="Youtube" class="youtube icon"><i class="fa fa-youtube"></i></a>
+
+										<a href="#" title="Pinterest" class="pinterest icon"><i class="fa fa-pinterest"></i></a>
+										<a href="#" title="Google Plus " class="google-plus icon"><i class="fa fa-google-plus"></i></a>
+										<a href="#" title="Skype" class="skype icon"><i class="fa fa-skype"></i></a>
+										<a href="#" title="Instagram" class="instagram icon"><i class="fa fa-instagram"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div class="pull-right">
+								<div id="powered">&copy; 2018</div>
+							</div>
+						</div>
+					</div>
+
+					</footer>
+  <script type="text/javascript" src="/js/bundle.min.js"></script>
+  </body>
+</html>
