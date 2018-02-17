@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Lamicall Adjustable Phone Stand For Desk",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus nulla vel eros egestas venenatis.",
+		"price": 300,
+		"tax": 30,
+		"discount": 20,
+		"rating": 4,
+		"thumbnail": "/image/product-small-a.jpg",
+		"image": "/image/product-large-a.jpg"
+  },
+  {
+    "id": 2,
+    "name": "JBL Everest Elite 700 Headphones",
+		"description": "Quisque consequat volutpat aliquet. Praesent tincidunt diam in nulla aliquam blandit.",
+		"price": 129,
+		"tax": "",
+		"discount": "",
+		"rating": 4,
+		"thumbnail": "/image/product-small-b.jpg",
+		"image": "/image/product-large-b.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Acer 15.6 inch Intel Core i7 2.6GHz",
+		"description": "Sed ornare lorem eu diam imperdiet eleifend. Fusce tristique magna arcu, eu viverra tortor feugiat dignissim",
+		"price": 1082,
+		"tax": 20,
+		"discount": 5,
+		"rating": 3,
+		"thumbnail": "/image/product-small-c.jpg",
+		"image": "/image/product-large-c.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Apple iPhone 7 Plus - Rose Gold",
+		"description": "Maecenas pulvinar lectus eu faucibus eleifend. Duis consectetur at purus malesuada vulputate",
+		"price": 660,
+		"tax": 10,
+		"discount": 20,
+		"rating": 4,
+		"thumbnail": "/image/product-small-d.jpg",
+		"image": "/image/product-large-d.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Garmin Drive 60LM USA",
+		"description": "Vestibulum cursus enim eget arcu malesuada, eu ornare arcu fringilla. In hac habitasse platea dictumst",
+		"price": 57,
+		"tax": "",
+		"discount": 20,
+		"rating": 2,
+		"thumbnail": "/image/product-small-b.jpg",
+		"image": "/image/product-large-b.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Keurig K55/K-Classic Coffee Maker",
+		"description": "Maecenas maximus consectetur mauris porttitor semper. Mauris porttitor pellentesque quam, ac pretium est condimentum eu",
+		"price": 57,
+		"tax": "",
+		"discount": 3,
+		"rating": 3,
+		"thumbnail": "/image/product-small-a.jpg",
+		"image": "/image/product-large-a.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Nitrile Exam Gloves - Medical Grade",
+		"description": "Curabitur a sagittis magna, id tincidunt nulla. Morbi libero ipsum, commodo ultricies fermentum in, pulvinar sed quam",
+		"price": 8,
+		"tax": "",
+		"discount": "",
+		"rating": 4,
+		"thumbnail": "/image/product-small-d.jpg",
+		"image": "/image/product-large-d.jpg"
+  },
+  {
+    "id": 8,
+    "name": "AquaBliss Universal Shower Filter ",
+		"description": "Suspendisse vitae lorem est. Pellentesque volutpat, magna ac tempor consectetur, lacus ante hendrerit elit, pretium ullamcorper metus tortor a turpis",
+		"price": 67,
+		"tax": "",
+		"discount": "",
+		"rating": 4,
+		"thumbnail": "/image/product-small-c.jpg",
+		"image": "/image/product-large-c.jpg"
+  }
+]
