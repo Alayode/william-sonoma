@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /** Send all requests to index.html */
 app.get('*', (request, response) => {
-  response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+	response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 /** Tell server to listen on the port set by the environment or use port 3000 */
