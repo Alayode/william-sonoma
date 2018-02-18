@@ -68,17 +68,34 @@ const Footer = () => (
 				<div className="pull-left">
 					<ul className="toggle-block">
 						<li>
-							<a href="#" title="Facebook" className="facebook icon"><i className="fa fa-facebook"></i></a>
-							<a href="#" title="Twitter" className="twitter icon"><i className="fa fa-twitter"></i></a>
+							<a href="#" title="Facebook" className="facebook icon">
+								<i className="fa fa-facebook"></i>
+							</a>
+							<a href="#" title="Twitter" className="twitter icon">
+								<i className="fa fa-twitter"></i>
+							</a>
 
-							<a href="#" title="Linkedin" className="linkedin icon"><i className="fa fa-linkedin"></i></a>
-							<a href="#" title="RSS" className="rss icon"><i className="fa fa-rss"></i></a>
-							<a href="#" title="Youtube" className="youtube icon"><i className="fa fa-youtube"></i></a>
+							<a href="#" title="Linkedin" className="linkedin icon">
+								<i className="fa fa-linkedin"></i>
+							</a>
+							<a href="#" title="RSS" className="rss icon">
+								<i className="fa fa-rss"></i></a>
+							<a href="#" title="Youtube" className="youtube icon">
+								<i className="fa fa-youtube"></i>
+							</a>
 
-							<a href="#" title="Pinterest" className="pinterest icon"><i className="fa fa-pinterest"></i></a>
-							<a href="#" title="Google Plus " className="google-plus icon"><i className="fa fa-google-plus"></i></a>
-							<a href="#" title="Skype" className="skype icon"><i className="fa fa-skype"></i></a>
-							<a href="#" title="Instagram" className="instagram icon"><i className="fa fa-instagram"></i></a>
+							<a href="#" title="Pinterest" className="pinterest icon">
+								<i className="fa fa-pinterest"></i>
+							</a>
+							<a href="#" title="Google Plus " className="google-plus icon">
+								<i className="fa fa-google-plus"></i>
+							</a>
+							<a href="#" title="Skype" className="skype icon">
+								<i className="fa fa-skype"></i>
+							</a>
+							<a href="#" title="Instagram" className="instagram icon">
+								<i className="fa fa-instagram"></i>
+							</a>
 						</li>
 					</ul>
 				</div>

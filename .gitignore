@@ -59,5 +59,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# package lock file
+.package-lock
+
 # build folder
-public/js/
+/public/js/

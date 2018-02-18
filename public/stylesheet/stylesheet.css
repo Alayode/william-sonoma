@@ -5369,6 +5369,16 @@ ul.accepted-payment-methods li, .toggle-block li {
 }
 
 #cart .dropdown-menu {
-	width: auto;
+	width: 450px;
 	display: block;
 }
+
+#cart .dropdown-menu .img-thumbnail {
+	width: 45px;
+}
+
+/* .toast {
+	position: fixed;
+	right: 0;
+	top: 20%;
+} */
