@@ -5,9 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "npm run prod && node server.js",
     "dev": "webpack-dev-server --inline --hot",
-    "postinstall": "npm run prod",
     "prod": "webpack -p"
   },
   "repository": {
@@ -21,7 +20,7 @@
   },
   "homepage": "https://github.com/Alayode/william-sonoma#readme",
   "devDependencies": {
-    
+
   },
     "dependencies": {
     "babel-preset-react": "^6.24.1",
@@ -30,10 +29,10 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "toaster-js": "^2.2.0",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
