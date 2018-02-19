@@ -5377,6 +5377,14 @@ ul.accepted-payment-methods li, .toggle-block li {
 	width: 45px;
 }
 
+.latest_product .product-details {
+	float: left;
+}
+
+.latest_product .image {
+	margin-right: 10px;
+}
+
 /* .toast {
 	position: fixed;
 	right: 0;

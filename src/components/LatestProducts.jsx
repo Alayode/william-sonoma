@@ -21,7 +21,7 @@ const LatestProducts = () => (
 							</div>
 							<div className="product-details">
 								<div className="caption">
-									<a href="/"> product name </a>
+									<a href="/"> 6W LED Bright Lamp </a>
 									<div className="rating">
 										<span className="fa fa-stack">
 											<i className="fa fa-star-o fa-stack-2x"></i>
@@ -32,8 +32,7 @@ const LatestProducts = () => (
 										</span>
 									</div>
 									<p className="price">
-										<span className="price-new">780</span> <span className="price-old">800</span>
-										<span className="price-tax">Tax: $10</span>
+										<span className="price-new">$780</span> <span className="price-old">$800</span>
 									</p>
 								</div>
 							</div>
@@ -55,7 +54,7 @@ const LatestProducts = () => (
 							</div>
 							<div className="product-details">
 								<div className="caption">
-									<a href="#"> product name </a>
+									<span><a href="#"> Polaroid Camera </a></span>
 									<div className="rating">
 										<span className="fa fa-stack">
 											<i className="fa fa-star-o fa-stack-2x"></i>
@@ -66,9 +65,8 @@ const LatestProducts = () => (
 										</span>
 									</div>
 									<p className="price">
-										<span className="price-new">780</span>
-										<span className="price-old">800</span>
-										<span className="price-tax">Tax: $10</span>
+										<span className="price-new">$650</span>
+										<span className="price-old">$700</span>
 									</p>
 								</div>
 							</div>
@@ -90,7 +88,7 @@ const LatestProducts = () => (
 							</div>
 							<div className="product-details">
 								<div className="caption">
-									<a href="#"> product name </a>
+									<a href="#"> Samsung Galaxy S5</a>
 									<div className="rating">
 										<span className="fa fa-stack">
 											<i className="fa fa-star-o fa-stack-2x"></i>
@@ -101,9 +99,9 @@ const LatestProducts = () => (
 										</span>
 									</div>
 									<p className="price">
-										<span className="price-new">780</span>
-										<span className="price-old">800</span>
-										<span className="price-tax">Tax: $10</span>
+										<span className="price-new">$400</span>
+										<span className="price-old">$800</span>
+										{/* <span className="price-tax">Tax: $10</span> */}
 									</p>
 								</div>
 							</div>

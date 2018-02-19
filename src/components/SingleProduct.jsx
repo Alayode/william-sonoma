@@ -20,9 +20,9 @@ const SingleProductComponent = (props) => {
 							/>
 							<img
 								className="img-responsive hover-image"
-								src="/image/product-large-a.jpg"
-								title="product name"
-								alt="product name"
+								src={props.image}
+								title={props.name}
+								alt={props.name}
 							/>
 						</a>
 
@@ -47,9 +47,9 @@ const SingleProductComponent = (props) => {
 												<span className="price-old">${props.price}</span>
 											</div>
 										)
-										: `$${props.price}`
+										: <span className="price-new">${props.price}</span>
 								}
-								<span className="price-tax">{ props.tax ? `Tax: ${props.tax}` : '' }</span>
+								{/* <span className="price-tax">{ props.tax ? `Tax: ${props.tax}` : 'Tax Free' }</span> */}
 							</div>
 							<p className="desc">{props.description}</p>
 						</div>
