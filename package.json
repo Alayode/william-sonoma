@@ -3,11 +3,25 @@
   "version": "1.0.0",
   "description": "Welcome to the Williams-Sonoma Markup",
   "main": "server.js",
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/test-setup.js",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleDirectories": [
+      "./node_modules",
+      "./src",
+      "./"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!toaster-js)"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run prod && node server.js",
     "dev": "webpack-dev-server --inline --hot",
-    "prod": "webpack -p"
+    "prod": "webpack -p",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
@@ -20,9 +34,15 @@
   },
   "homepage": "https://github.com/Alayode/william-sonoma#readme",
   "devDependencies": {
-
+    "babel-jest": "^22.4.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
+    "mock-local-storage": "^1.0.5"
   },
-    "dependencies": {
+  "dependencies": {
     "babel-preset-react": "^6.24.1",
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
