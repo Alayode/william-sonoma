@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "7"
+install:
+    - npm install
+script:
+- npm run prod
+- npm run test
+notifications:
+slack: yamanotestudios:yv02OmOp8JQeGOjgz9h9Fhh1
+branches:
+  only:
+  - master
+- test-components
