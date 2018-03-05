@@ -45,10 +45,10 @@ describe('CartDropDown', () => {
 			done();
 		});
 	});
-	it('should toggle the value of istoggle in the state when the Shopping Cart button is clicked', (done) => {
+	it('should toggle the value of isToggle in the state when the Shopping Cart button is clicked', (done) => {
 		shoppingCartButton.simulate('click');
 		setImmediate(() => {
-			expect(CartDropDownComponent.state('istoggle')).toEqual(true);
+			expect(CartDropDownComponent.state('isToggle')).toEqual(true);
 			done();
 		});
 	});

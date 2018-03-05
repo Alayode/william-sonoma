@@ -25,7 +25,7 @@ describe('ContentComponent', () => {
 	it('should contain the HeaderBottom Component', () => {
 		expect(ContentComponentMount.contains(HeaderBottom)).toBeTruthy();
 	});
-	it('should contain the HeaderBottom Component', () => {
+	it('should contain the Latest Product Component', () => {
 		expect(ContentComponentMount.contains(LatestProducts)).toBeTruthy();
 	});
 });

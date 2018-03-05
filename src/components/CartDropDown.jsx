@@ -8,7 +8,7 @@ class CartDropDown extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			istoggle: false,
+			isToggle: false,
 		};
 		this.getCartTotal = this.getCartTotal.bind(this);
 		this.renderCartItems = this.renderCartItems.bind(this);
@@ -33,7 +33,7 @@ class CartDropDown extends Component {
 
 	handleToggleClick() {
 		this.setState({
-			istoggle: !this.state.istoggle,
+			isToggle: !this.state.isToggle,
 		});
 	}
 
@@ -58,7 +58,7 @@ class CartDropDown extends Component {
 						</span>
 					</button>
 					{
-						this.state.istoggle
+						this.state.isToggle
 							? <DropDown
 								{ ...this.props }
 								getCartTotal={this.getCartTotal}
